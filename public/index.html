@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      let formulario = document.getElementById('formul');
+      formulario.addEventListener('submit', function() {
+        formulario.reset();
+      });
+    });
+</script> -->
+<body>
+    <form action="api/productos" method="POST" class="bg" id="formul">
+        <input type="text" name="title" placeholder="Ingrese aqui el titulo">
+        <input type="number" name="price" placeholder="Ingrese aqui el precio">
+        <input type="text" name="thumbnail" placeholder="Ingrese aqui el Thumbnail">
+        <input type="submit" value="SUBMIT" class="submit">
+        <input type="reset" value="CLEAR" class="submit mt">
+    </form>
+</body>
+</html>
